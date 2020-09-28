@@ -99,7 +99,33 @@ body {
   transform: scale(0.91);
 }
 
+.get-data--search { 
+  margin-top: 2em;
+  padding: 15px;
+  outline: 0;
+  border: 1px solid #333;
+  font-size: 18px;
+}
 
+.get-data--button { 
+  margin-top: 1rem;
+  display: block;
+  width: 15%;
+  text-align: center;
+  background-color: #333;
+  padding: 25px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: 0;
+}
+
+
+.error { 
+  text-align: center;
+  color: red;
+  margin-top: 2em;
+}
 
 
 @media(max-width: 1280px){

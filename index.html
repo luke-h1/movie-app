@@ -9,13 +9,20 @@
     <header class="header">
       <h1>Movie App 🍿🍿🍿</h1>
     </header>
+    <h1 class="error" id="error"></h1>
     <div class="get-data">
-      <button class="button" id="button">Get Popular Movies </button>
+      <button class="button" id="button">Get Popular Movies</button>
+      <input
+        type="text"
+        class="get-data--search"
+        id="searchbtn"
+        placeholder="Search Movies"
+      />
+      <button class="get-data--button" id="btn-search">Search Movies</button>
     </div>
     <div class="container">
-      <div class="grid" id="grid"> 
+      <div class="grid" id="grid">
         <div id="results"></div>
-       
       </div>
     </div>
     <script src="app.js"></script>

@@ -15,13 +15,14 @@ function showError(message){
   }, 2000)
 }
 
+// get popular movies 
 async function getPopularMovies(){
   const res = await fetch(`${API_URL}`);
   const data = await res.json();
   showPopularMoviesDOM(data);
 }
 
-
+// show popular movies in DOM 
 function showPopularMoviesDOM(data){
   clearFields();
   let output = '';
@@ -44,6 +45,8 @@ function showPopularMoviesDOM(data){
   popularResults.innerHTML = output;
 }
 
+
+// get specific user query
 async function getMovieQuery(){
   clearFields(); 
   const query = document.getElementById('searchbtn')
@@ -58,6 +61,7 @@ async function getMovieQuery(){
   }
 }
 
+// show specific user query in DOM 
 function showQueryData(json){
   console.log(json);
   let final = '';

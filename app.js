@@ -1,5 +1,5 @@
 const button = document.getElementById('button')
-const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=7a78372c9666466c223f25edb1c630f5&language=en-US`
+const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=xxxxxxxxxxx&language=en-US`
 const popularResults = document.getElementById('grid');
 const searchBtn = document.getElementById('btn-search')
 
@@ -55,7 +55,7 @@ async function getMovieQuery(){
   if(input === ''){
     showError('Enter a movie')
   }else { 
-    const QUERY_URL = `https://api.themoviedb.org/3/search/movie?query=${input}&api_key=7a78372c9666466c223f25edb1c630f5&language=en-US&page=1&include_adult=false`; 
+    const QUERY_URL = `https://api.themoviedb.org/3/search/movie?query=${input}&api_key=xxxxxxxxxxxxx&language=en-US&page=1&include_adult=false`; 
     const response = await fetch(`${QUERY_URL}`) 
     const json = await response.json(); 
     showQueryData(json);   

@@ -17,7 +17,8 @@ function showError(message){
 
 // get popular movies 
 async function getPopularMovies(){
-  const res = await fetch(`${API_URL}`);
+  // const res = await fetch(`${API_URL}`);
+  const res = await fetch('data.json')
   const data = await res.json();
   showPopularMoviesDOM(data);
 }
